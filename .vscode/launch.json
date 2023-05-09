@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA-journey/STACK-CLASS1",
-      "program": "d:/DSA-journey/STACK-CLASS1/build/Debug/outDebug",
+      "cwd": "d:/DSA-journey",
+      "program": "d:/DSA-journey/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
