@@ -1,12 +1,9 @@
-#include<iostream>
-#include<stack>
-#include<limits.h>
-#include<stdio.h>
-#include<algorithm>
+#include <iostream>
 #include<vector>
+#include<limits.h>
+#include<stack>
 using namespace std;
-class Solution {
-public:
+
 vector<int> prevSmallerElement(vector<int>& input) {
         stack<int> s;
         s.push(-1);
@@ -52,18 +49,20 @@ vector<int> nextSmaller(vector<int> &input) {
   }
   return ans;
 }
-    int largestRectangleArea(vector<int>& heights) {
-         //step1: prevSmaller output
-        vector<int> prev = prevSmallerElement(heights);
+
+int getRectangularAreaHistogram(vector<int> &height) {
+
+        //step1: prevSmaller output
+        vector<int> prev = prevSmallerElement(height);
 
         //step2: nextSmaller call
-        vector<int> next = nextSmaller(heights);
+        vector<int> next = nextSmaller(height);
 
         int maxArea = INT_MIN;
-        int size = heights.size();
+        int size = height.size();
 
-        for(int i=0; i<heights.size(); i++) {
-                int length = heights[i];
+        for(int i=0; i<height.size(); i++) {
+                int length = height[i];
                 
                 if(next[i] == -1) {
                         next[i] = size;
@@ -76,5 +75,17 @@ vector<int> nextSmaller(vector<int> &input) {
         }
 
         return maxArea;
-    }
+}
+
+int main() {
+  vector<int> v;
+  v.push_back(2);
+  v.push_back(1);
+  v.push_back(5);
+  v.push_back(6);
+  v.push_back(2);
+  v.push_back(3);
+
+  cout << "Ans is: " << getRectangularAreaHistogram(v) << endl;
+  return 0;
 };
