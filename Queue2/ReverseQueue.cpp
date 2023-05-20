@@ -24,6 +24,7 @@ queue<int> rev(queue<int> q)
         
         q.push(element);
     }
+
     
     return q;
 }
