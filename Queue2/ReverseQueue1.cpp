@@ -53,7 +53,7 @@ int main() {
   q.push(8);
   q.push(9);
 
-    
+    reverseQueue(q);
     reverseQueueRecursion(q);
 
 
