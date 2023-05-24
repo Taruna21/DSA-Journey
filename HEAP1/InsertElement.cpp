@@ -7,7 +7,7 @@ class Heap{
     int size;
 
     Heap() {
-        int size = 0;
+        int size=0;
     }
 
     void insert(int value){
@@ -42,11 +42,13 @@ int main(){
 
     h.size = 5;
     for(int i = 0 ; i<=h.size ; i++){
-        cout<<h.arr[i]<<" ";
+      cout<<h.arr[i]<<" ";
 
     }cout<<endl;
+    h.insert(120);
+   
 
-    h.insert(110);
+    cout<<"output"<<endl;
     for(int i = 0 ; i<=h.size ; i++){
         cout<<h.arr[i]<<" ";
 
