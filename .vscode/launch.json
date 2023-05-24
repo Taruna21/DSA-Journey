@@ -16,8 +16,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA-Journey/TREE1",
-      "program": "d:/DSA-Journey/TREE1/build/Debug/outDebug",
+      "cwd": "d:/DSA-Journey",
+      "program": "d:/DSA-Journey/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
